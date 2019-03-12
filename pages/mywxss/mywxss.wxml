@@ -1,0 +1,14 @@
+<view>
+  <block wx:for = "{{listData}}" wx:key = "item">
+    <view class='vcss'>
+      <view style='float:left;padding:2rpx 30rpx 2rpx 2rpx;'><image src='{{item.img}}' style='width:160rpx;height:96rpx;'></image></view>
+      <view style='float:left'>
+          <text style='font-size:28rpx;'>{{item.imgName}}</text>
+          <text style='font-size:28rpx;'>{{item.imgDes}}</text>
+      </view>
+      <view style='float:right'>
+          <text style='font-size:23rpx;color:rgba(0, 0, 0, 0.11)'>{{item.dtime}}</text>
+      </view>
+    </view>
+  </block>
+</view>

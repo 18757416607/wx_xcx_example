@@ -1,0 +1,7 @@
+{
+"backgroundTextStyle": "light",
+"navigationBarBackgroundColor": "#000",
+"navigationBarTitleText": "myform",
+"navigationBarTextStyle": "white",
+"enablePullDownRefresh": false
+}

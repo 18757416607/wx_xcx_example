@@ -1,0 +1,10 @@
+/**app.wxss**/
+.redColor{
+  color: red;
+}
+.blackColor{
+  color: black;
+}
+.sv{
+  background-color: red;
+}

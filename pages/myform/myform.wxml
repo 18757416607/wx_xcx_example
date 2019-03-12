@@ -1,0 +1,81 @@
+<view class='all'>
+  <view class='form'>myform</view>
+  <form bindsubmit='bsubmit' bindreset='breset'>
+
+    <!-- 复选框 -->
+    <view class='other_form'>checkbox</view>
+    <checkbox-group name = "checkbox">
+      <view>
+        <label><checkbox value='1'>111111111111</checkbox></label>
+      </view>
+      <view>
+        <label><checkbox value='2'>222222222222</checkbox></label>
+      </view>
+    </checkbox-group>
+
+    <!-- 输入框 -->
+    <view class='other_form'>input</view>
+    <view>
+      <input name = "input" class='inp' placeholder='我是输入框' auto-focus maxlength='66' />
+    </view>
+
+    <!-- 下拉 -->
+    <view class='other_form'>picker</view>
+    <view>
+      <picker name = "picker" mode = "selector" bindchange='picker_bc' range='{{array}}' value='0'>
+        <view>
+          当前选择:{{array[index]}}
+        </view>
+      </picker>
+    </view>
+
+    <!-- 单选 -->
+    <view class='other_form'>redio</view>
+    <view>
+      <radio-group name = "redio" bindchange = 'redio_bc'>
+        <label><radio checked>
+          男
+        </radio></label>
+        <label><radio>
+          女
+        </radio></label>
+      </radio-group>
+    </view>
+
+    <!-- 滑动选择器 -->
+    <view class='other_form'>slider</view>
+    <view>
+      <slider name = "slider" min='0' max='100' step='3' disabled='{{false}}' value='15' show-value bindchange='slider_bc'>
+      
+      </slider>
+    </view>
+
+    <!-- 开关 -->
+    <view class='other_form'>switch</view>
+    <view>
+      <switch name = "slider" checked bindchange='switch_bc'>
+        
+      </switch>
+    </view>
+
+    <!-- 按钮 -->
+    <view class='other_form'>button</view>
+    <button size='mini' type='primary' plain='{{false}}' form-type='submit' loading='../images/1.png'></button>
+    <button size='mini' type='default' plain = '{{false}}' form-type='submit' loading='../images/1.png'></button>
+    <button size='mini' type='warm' plain='{{false}}' form-type='reset' loading='../images/1.png'>reset</button>
+
+    <!-- 加载框 -->
+    <view class='other_form'>loading</view>
+    <view>
+      <loading hidden = "{{ls}}">加载中</loading>
+      <button bindtap='loadingBtn'>切换加载中效果</button>
+    </view>
+
+  </form>
+
+  <modal title = "标题" hidden='{{qr}}' confirm-text = "确定" no-cancel = '{{false}}' cancel-text = "取消">撒旦法第三方</modal>
+  <button bindtap='showBtn'>切换确认按钮</button>
+
+
+
+</view>

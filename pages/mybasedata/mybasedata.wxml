@@ -1,0 +1,38 @@
+<view>
+  <!-- 注意点template is 和 name 是一个组合 -->
+
+
+  <!-- 对象组合后  原来的a值会销毁 -->
+  <view style='margin-top:20rpx;background-color:red'><text>对象组合</text></view>
+  <view><text>原来a = {{a}}</text></view>
+  <template is = "object1" data = "{{temp1:a,temp2:b}}"></template>
+  <template name = "object1">
+    <view><text>temp1 = {{temp1}}</text></view>
+    <view><text>temp2 = {{temp2}}</text></view>
+    <view><text>原来a = {{a}}</text></view>
+  </template>
+
+  <!-- 对象展开后，会把原来的对象销毁 -->
+  <view style='margin-top:20rpx;background-color:red'><text>对象展开</text></view>
+  <view><text>原来 = {{obj1.name1}}</text></view>
+  <template is = "object2" data = "{{...obj1,...obj2,width:333}}"></template>
+  <template name = "object2">
+    <view><text>name1 = {{name1}}</text></view>
+    <view><text>age1 = {{age1}}</text></view>
+    <view><text>height1 = {{height1}}</text></view>
+    <view><text>name2 = {{name2}}</text></view>
+    <view><text>age2 = {{age2}}</text></view>
+    <view><text>height2 = {{height2}}</text></view>
+    <view><text>width = {{width}}</text></view>
+    <view><text>原来 = {{obj1.name1}}</text></view>
+  </template>
+
+  <view style='margin-top:20rpx;background-color:red'><text>条件渲染</text></view>
+  <view wx:if = "{{condition}}">是否显示wx:if</view>
+
+  <view wx:if = "{{conditionValue==1}}">是否显示wx:if</view>
+  <view wx:elif = "{{conditionValue==2}}">是否显示wx:elif</view>
+  <view wx:else = "{{conditionValue==3}}">是否显示wx:else</view>
+
+  
+</view>

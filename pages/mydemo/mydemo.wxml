@@ -1,0 +1,12 @@
+<view class='container'>
+  <text>mydemo</text>
+  <button type='default' bindtap='mydemo'>测试</button>
+  <text>{{myobj.name}},{{myobj.age}}</text>
+  <button type='default' ontap="goMyView">跳转到我的页面</button>
+  <navigator  url='../logs/logs' open-type="redirect">navigator标签跳转</navigator>
+  <view bindtap='gotoView' class='{{color}}'>数据模拟</view>
+  <view wx:for="{{array}}">
+    <view>{{item}}</view>
+  </view>
+  <scroll-view class='sv' scroll-y>dfsgdf</scroll-view>
+</view> 

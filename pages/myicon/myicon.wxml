@@ -1,0 +1,13 @@
+<view>
+  <view>
+   <block wx:for="{{iconSize}}">
+    <icon type='success' size='{{item}}'></icon>
+   </block>
+  </view>
+
+  <progress percent='20' show-info></progress>
+  <progress percent='40' color='yellow' stroke-width='12' show-info></progress>
+  <progress percent='60' color='red' show-info></progress>
+  <progress percent='80' active show-info></progress>
+
+</view>

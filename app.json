@@ -1,0 +1,61 @@
+{
+  "pages":[
+    "pages/myevent/myevent",
+    "pages/mybasedata/mybasedata",
+    "pages/mywxss/mywxss",
+    "pages/myviewscroll/myscroll",
+    "pages/myswiper/myswiper",
+    "pages/myicon/myicon",
+    "pages/mydemo/mydemo",
+    "pages/myform/myform",
+    "pages/index/index",
+    "pages/logs/logs"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "微信测试",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":false
+  },
+  "tabBar":{
+    "position":"top",
+    "color":"#000",
+    "selectedColor":"#56abe4",
+    "backgroundColor":"#fff",
+    "borderStyle":"white",
+    "list":[{
+      "pagePath":"pages/index/index",
+      "text":"首页",
+      "iconPath":"images/1.png",
+      "selectedIconPath":"images/2.png"
+    },
+    {
+      "pagePath": "pages/logs/logs",
+      "text": "日志",
+      "iconPath": "images/3.png",
+      "selectedIconPath": "images/4.png"
+    },
+    {
+      "pagePath": "pages/mydemo/mydemo",
+      "text": "mydemo",
+      "iconPath": "images/5.png",
+      "selectedIconPath": "images/6.png"
+    },
+    {
+      "pagePath": "pages/myviewscroll/myscroll",
+      "text": "scroll",
+      "iconPath": "images/5.png",
+      "selectedIconPath": "images/6.png"
+    }
+    ]
+  },
+  "networkTimeout":{
+    "request":30000,
+    "connectSocket":3000,
+    "uploadFile":3000,
+    "downloadFile":3000
+  },
+  "debug":true
+}

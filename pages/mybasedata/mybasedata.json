@@ -1,0 +1,7 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#000",
+  "navigationBarTitleText": "基础数据",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": false
+}

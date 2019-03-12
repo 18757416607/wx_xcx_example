@@ -1,0 +1,33 @@
+<view>
+ <text>{{scrollObj.name1}}</text>
+ <!--bindscrolltoupper  滚动到顶部触发
+     bindscrolltolower  滚动到底部触发
+     bindscroll  所有滚动就会触发
+     scroll-top 渲染时的定位
+  -->
+ <scroll-view scroll-y class='scroll-y' bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scl" scroll-top="{{scrollObj.scrollTop}}"> 
+  <view  class='scroll-y1'></view>
+  <view  class='scroll-y2'></view>
+  <view  class='scroll-y3'></view>
+ </scroll-view>
+ <button bindtap='gundong'>滚动</button>
+
+ <text>{{scrollObj.name2}}</text>
+ <scroll-view scroll-x >
+ <view class='scroll-x'>
+  <view  class='scroll-x1'></view>
+  <view  class='scroll-x2'></view>
+  <view  class='scroll-x3'></view>
+ </view>
+ 
+ </scroll-view>
+
+
+ <button bindtap='c'>去swiper</button>
+ <button bindtap='myicon'>去icon</button>
+ <button bindtap='myform'>去form</button>
+ <button bindtap='mywxss'>去mywxss</button>
+ <button bindtap='mybasedata'>去mybasedata(基础数据)</button>
+ <button bindtap='myevent'>去myevent(事件)</button>
+
+</view>

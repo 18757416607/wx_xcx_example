@@ -1,0 +1,40 @@
+.scroll-y{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  height: 200px;
+}
+.scroll-y1{
+  height: 200rpx;
+  background-color: red;
+}
+.scroll-y2{
+  height: 200rpx;
+  background-color:yellowgreen;
+}
+.scroll-y3{
+  height: 200rpx;
+  background-color:yellow;
+}
+
+
+.scroll-x{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  height: 300px;
+  width: 200vw;
+}
+.scroll-x1{
+  height: 60rpx;
+  width: 400px;
+  background-color: rgb(255, 0, 140);
+}
+.scroll-x2{
+  height: 60rpx;
+  width: 400px;
+  background-color:yellowgreen;
+}
+.scroll-x3{
+  height: 60rpx;
+  width: 400px;
+  background-color:yellow;
+}

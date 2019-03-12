@@ -1,0 +1,20 @@
+/* pages/myform/myform.wxss */
+.all{
+  background-color: rgba(0, 0, 0, 0.11);
+  height: 100%;
+}
+.form{
+  text-align: center;
+  color: yellowgreen
+}
+.other_form{
+  margin-left: 30rpx;
+  padding: 10rpx;
+  margin: 30rpx;
+  background-color:rgba(0, 0, 0, 0.24);
+}
+.inp{
+  border: 1px solid rgba(0, 0, 0, 0.288);
+  border-radius: 6rpx;
+  width: 200px;
+}

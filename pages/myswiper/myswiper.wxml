@@ -1,0 +1,10 @@
+<view>
+  <swiper indicator-dots autoplay interval='1000' duration='1000'>
+    <swiper-item>
+      <image src = "https://weixin.cabin-app.com/weixin/static/bank/pingan.png" class='side-image'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src = "https://weixin.cabin-app.com/weixin/static/bank/nongxinetc.png" class='side-image'></image>
+    </swiper-item>
+  </swiper>
+</view>
